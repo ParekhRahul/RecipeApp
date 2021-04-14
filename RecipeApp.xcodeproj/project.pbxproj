@@ -11,6 +11,10 @@
 		B70B3BF92626771600D20306 /* RecipeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70B3BF82626771600D20306 /* RecipeListView.swift */; };
 		B70B3BFB2626771700D20306 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B70B3BFA2626771700D20306 /* Assets.xcassets */; };
 		B70B3BFE2626771700D20306 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B70B3BFD2626771700D20306 /* Preview Assets.xcassets */; };
+		B70B3C1126267A4500D20306 /* recipes.json in Resources */ = {isa = PBXBuildFile; fileRef = B70B3C1026267A4500D20306 /* recipes.json */; };
+		B70B3C1826267B5300D20306 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70B3C1726267B5300D20306 /* Recipe.swift */; };
+		B70B3C1B26267DA400D20306 /* RecipeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70B3C1A26267DA400D20306 /* RecipeModel.swift */; };
+		B70B3C1E26267E3800D20306 /* DataServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70B3C1D26267E3800D20306 /* DataServices.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +24,10 @@
 		B70B3BFA2626771700D20306 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B70B3BFD2626771700D20306 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B70B3BFF2626771700D20306 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B70B3C1026267A4500D20306 /* recipes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = recipes.json; sourceTree = "<group>"; };
+		B70B3C1726267B5300D20306 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		B70B3C1A26267DA400D20306 /* RecipeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeModel.swift; sourceTree = "<group>"; };
+		B70B3C1D26267E3800D20306 /* DataServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataServices.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +62,8 @@
 			children = (
 				B70B3BF62626771600D20306 /* RecipeApp.swift */,
 				B70B3C062626774300D20306 /* Views */,
-				B70B3C072626774E00D20306 /* Models */,
 				B70B3C082626775500D20306 /* ViewModels */,
+				B70B3C072626774E00D20306 /* Models */,
 				B70B3C092626775F00D20306 /* Data */,
 				B70B3C0A2626779C00D20306 /* Services */,
 				B70B3C0B262677A300D20306 /* Utilities */,
@@ -85,6 +93,7 @@
 		B70B3C072626774E00D20306 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B70B3C1726267B5300D20306 /* Recipe.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -92,6 +101,7 @@
 		B70B3C082626775500D20306 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				B70B3C1A26267DA400D20306 /* RecipeModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -99,6 +109,7 @@
 		B70B3C092626775F00D20306 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				B70B3C1026267A4500D20306 /* recipes.json */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -106,6 +117,7 @@
 		B70B3C0A2626779C00D20306 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				B70B3C1D26267E3800D20306 /* DataServices.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -175,6 +187,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B70B3BFE2626771700D20306 /* Preview Assets.xcassets in Resources */,
+				B70B3C1126267A4500D20306 /* recipes.json in Resources */,
 				B70B3BFB2626771700D20306 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -186,6 +199,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B70B3C1E26267E3800D20306 /* DataServices.swift in Sources */,
+				B70B3C1826267B5300D20306 /* Recipe.swift in Sources */,
+				B70B3C1B26267DA400D20306 /* RecipeModel.swift in Sources */,
 				B70B3BF92626771600D20306 /* RecipeListView.swift in Sources */,
 				B70B3BF72626771600D20306 /* RecipeApp.swift in Sources */,
 			);
